@@ -1,0 +1,1 @@
+This is a repository for the HEXAWARE DotNet Foundation Batch Coding Challenges.
