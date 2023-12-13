@@ -75,7 +75,6 @@ create table Participants (
     foreign key (EventID) references AdoptionEvents(EventID)
 );
 
--- Insert 10 entries into Pets table
 insert into Pets (PetID, Name, Age, Breed, Type, AvailableForAdoption)
 values
     (1, 'Argus', 2, 'German Shepherd', 'Dog', 1),
@@ -89,7 +88,6 @@ values
     (9, 'Wayne', 1, 'Golden Retriever', 'Dog', 1),
     (10, 'Scarlett', 3, 'Golden Retriever', 'Dog', 1);
 
--- Insert 10 entries into Shelters table
 insert into Shelters (ShelterID, Name, Location)
 values
     (1, 'Loving Paws Sanctuary', 'Mumbai, Maharashtra'),
@@ -103,7 +101,6 @@ values
     (9, 'Rescue Me Pet Sanctuary', 'Jaipur, Rajasthan'),
     (10, 'Second Chance Critter Rescue', 'Lucknow, Uttar Pradesh');
 
--- Insert 10 entries into Donations table
 insert into Donations (DonationID, DonorName, DonationType, DonationAmount, DonationItem, DonationDate)
 values
     (1, 'Alexander Mitchell Reynolds', 'Cash', 100.00, NULL, '2023-01-15 10:30:00'),
@@ -117,7 +114,6 @@ values
     (9, 'Grace Elizabeth Roberts', 'Cash', 90.00, NULL, '2023-09-14 13:25:00'),
     (10, 'Oliver James Parker', 'Item', NULL, 'Dog Leash', '2023-10-30 07:50:00');
 
--- Insert 10 entries into AdoptionEvents table
 insert into AdoptionEvents (EventID, EventName, EventDate, Location)
 values
     (1, 'Paws and Adoptions Festival', '2023-01-25 11:00:00', 'Mumbai, Maharashtra'),
@@ -131,7 +127,6 @@ values
     (9, 'Heartstrings Adoption Showcase', '2024-04-03 16:00:00', 'Jaipur, Rajasthan'),
     (10, 'Wagging Tails Adoption Affair', '2024-06-22 10:45:00', 'Chennai, Tamil Nadu');
 
--- Insert 10 entries into Participants table
 insert into Participants (ParticipantID, ParticipantName, ParticipantType, EventID)
 values
     (1, 'Loving Paws Sanctuary', 'Shelter', 1),
