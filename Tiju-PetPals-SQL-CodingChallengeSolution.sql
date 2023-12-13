@@ -1,6 +1,6 @@
 -- Coding Challenge - PetPals, The Pet Adoption Platform
 
--- 1. Provide a SQL script that initializes the database for the Pet Adoption Platform îPetPalsî.
+-- 1. Provide a SQL script that initializes the database for the Pet Adoption Platform ‚ÄùPetPals‚Äù.
 if exists (select * from sys.databases where name = 'PetPals')
 begin
 	drop database PetPals;
@@ -280,7 +280,7 @@ join Users U on A.UserID = U.UserID;
 --17. Retrieve a list of all shelters along with the count of pets currently available for adoption in each shelter.
 select S.ShelterID, S.Name AS ShelterName, count(P.PetID) as [Pets Available For Adoption]
 from Shelters S
-left join Pets P ON S.ShelterID = P.PetID
+left join Pets P ON S.ShelterID = P.ShelterID
 where P.AvailableForAdoption = 1
 group by S.ShelterID, S.Name;
 
