@@ -26,14 +26,14 @@ GO
 IF OBJECT_ID(N'dbo.AdoptionEvents', N'U') IS NOT NULL  
    DROP TABLE [dbo].[AdoptionEvents];  
 GO
-IF OBJECT_ID(N'dbo.Donations', N'U') IS NOT NULL  
-   DROP TABLE [dbo].[Donations];  
+IF OBJECT_ID(N'dbo.Participants', N'U') IS NOT NULL  
+   DROP TABLE [dbo].[Participants];  
 GO
 IF OBJECT_ID(N'dbo.Users', N'U') IS NOT NULL  
    DROP TABLE [dbo].[Users];  
 GO
 IF OBJECT_ID(N'dbo.Adoption', N'U') IS NOT NULL  
-   DROP TABLE [dbo].[MyTable0];  
+   DROP TABLE [dbo].[Adoption];  
 GO
 
 create table Pets (
